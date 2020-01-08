@@ -2,17 +2,44 @@
 <html lang="en">
 
 <head>
-    <Link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <title>Trivia Game</title>
+    <title>Trivia Game</title>
 </head>
 
 <body>
+    <section id="main-section">
+        <h1 id="trivia-title">Trivia!</h1>
+        <div id="time-left"></div>
+        <div id="time-up"></div>
+        <div id=#q-box">        
+            <div id="questions"></div>
+            <div id="right-wrong"></div>
+        
+        <div id="buttons">
+        <button id="start-button">Start!</button>
+        <button class="choice" id="true" value="true">True</button><button class="choice" id="false" value="false">False</button>
+        </div>
+       
+        </div>
+        
+        
+        <div class="results">
+            <ul>
+                <li id="right"></li>
+                <li id="wrong"></li>
+                <li id="notAnswered"></li>
+            </ul>
+        </div>
+
+        <button id="restart">Restart</button>
+    </section>
+
     <script src="assets/javascript/app.js"></script>
 </body>
 

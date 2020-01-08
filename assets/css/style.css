@@ -2,18 +2,52 @@
     box-sizing: border-box;
 
 }
-    html { 
-        background: url("../images/coolPic2.jpg") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-
+ 
 body {
     font-size: 26px;
-    font-family: fantasy;
+    font-family: sans-serif;
     color: papayawhip;
     min-height: calc(100vh - 70px);
+    background: url("../images/sciFy2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+#main-section {
+    width: 60%;
+    height: 800px;
+    background-color: burlywood;
+    margin: auto;
+    margin-top: 36px;
+    border-radius: 20px;
+}
+h1 {
+margin: auto;
+font-size: 75px;
+text-align: center;
+padding: 24px;
+}
+
+#start-button {
+    margin-left: 460px;
+    margin-top: 100px; 
+    text-align: center;
+    font-size: 50px;
+    background-color: red;
+    width: 20%;
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.input {
+    font-size: 12px;
+}
+p {
+    font-size: 24px;
+}
+
+.blue {
+    color: blue;
+  }
