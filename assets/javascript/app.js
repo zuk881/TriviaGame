@@ -4,7 +4,8 @@ $(document).ready(function () {
     var questions = [
         {
             question: "The main storyline follows a character named Evie.",
-            answer: "false"
+            answer: "false",
+            image: "../images/evie-1.jpg"
         },
         {
             question: "The character Mal, can take the form of a dragon.",
@@ -15,7 +16,7 @@ $(document).ready(function () {
             answer: "true"
         },
         {
-            question: "In the first Desendants movie, the four characters picked to go to Auradon Prep are Carlos, Jay, Evie, and Drizzy.",
+            question: "In the first Descendants movie, the four characters picked to go to Auradon Prep are Carlos, Jay, Evie, and Dizzy.",
             answer: "false"
         },
         {
@@ -27,15 +28,15 @@ $(document).ready(function () {
             answer: "true"
         },
         {
-            question: "In Desendants 2, Evie cast a spell to make her hair blonde.",
+            question: "In Descendants 2, Evie cast a spell to make her hair blonde.",
             answer: "false"
         },
         {
-            question: "In Desendents 3, Mal turns into the Queen of Mean.",
+            question: "In Descendents 3, Mal turns into the Queen of Mean.",
             answer: "false"
         },
         {
-            question: "In Desendants 2 Mal's nickname for Uma is shrimpy.",
+            question: "In Descendants 2 Mal's nickname for Uma is shrimpy.",
             answer: "true"
         },
         {
@@ -90,6 +91,7 @@ $(document).ready(function () {
         $("#time-left").show();
         $("#questions").show();
         $("#questions").html(questions[i].question);
+        $("#img").html(questions[i].image);
         $("#start-button").hide();
         $(".choice").show();
         intervalId = setInterval(decrement, 1000);
