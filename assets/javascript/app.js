@@ -9,35 +9,43 @@ $(document).ready(function () {
         },
         {
             question: "The character Mal, can take the form of a dragon.",
-            answer: "true"
+            answer: "true",
+            image: "../images/mal-2.jpg"
         },
         {
             question: "The character named Carlos is afraid of dogs.",
-            answer: "true"
+            answer: "true",
+            image: "../images/carlos-3.jpg"
         },
         {
             question: "In the first Descendants movie, the four characters picked to go to Auradon Prep are Carlos, Jay, Evie, and Dizzy.",
-            answer: "false"
+            answer: "false",
+            image: "../images/group-4.jpg"
         },
         {
             question: "Ben is the future king of The Isle of The Lost.",
-            answer: "false"
+            answer: "false",
+            image: "../images/ben-5.jpg"
         },
         {
             question: "Mal's dad is a god named Hades.",
-            answer: "true"
+            answer: "true",
+            image: "../images/hades-6.jpg"
         },
         {
             question: "In Descendants 2, Evie cast a spell to make her hair blonde.",
-            answer: "false"
+            answer: "false",
+            image: "../images/mal-7.jpg"
         },
         {
             question: "In Descendents 3, Mal turns into the Queen of Mean.",
-            answer: "false"
+            answer: "false",
+            image: "../images/audrey-8.jpg"
         },
         {
             question: "In Descendants 2 Mal's nickname for Uma is shrimpy.",
-            answer: "true"
+            answer: "true",
+            image: "../images/uma-9.jpg"
         },
         {
             question:"",
