@@ -72,7 +72,7 @@ $(document).ready(function () {
         $("#right-wrong").html("");
         if (userChoice == questions[i].answer) {
             $("#right-wrong").show();
-            $("#right-wrong").html("Correct!!!").fadeOut(1500);
+            $("#right-wrong").html("Correct!!!").fadeOut(2000);
             score++;
             i++;
             unAnswered--;
@@ -81,7 +81,7 @@ $(document).ready(function () {
         }
         else {
             $("#right-wrong").show();
-            $("#right-wrong").html("Wrong!!!").fadeOut(1500);
+            $("#right-wrong").html("Wrong!!!").fadeOut(2000);
             wrong++;
             i++;
             unAnswered--;
@@ -122,7 +122,7 @@ $(document).ready(function () {
         if (time <= 0) {
             time = 11;
             $("#right-wrong").show();
-            $("#right-wrong").html("Answer was " + questions[i].answer).fadeOut(1500);
+            $("#right-wrong").html("Answer was " + questions[i].answer).fadeOut(2000);
             i++;
             getNewQ();
         }
