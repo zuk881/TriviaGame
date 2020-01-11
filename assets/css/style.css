@@ -19,7 +19,7 @@ body {
     position: relative;
     top: 100px;
     width: 40%;
-    height: 500px;
+    height: 600px;
     background-color: rgb(59, 214, 231);
     margin: auto;
     border-radius: 20px;
@@ -41,7 +41,7 @@ h1 {
     position: sticky;
     left: 45%;
     color: papayawhip;
-    margin-top: 100px; 
+    margin-top: 60px; 
     text-align: center;
     font-size: 50px;
     background-color: gray;
@@ -68,7 +68,7 @@ p {
     position: sticky;
     left: 45%;
     color: papayawhip;
-    margin-top: 100px; 
+    margin-top: 60px; 
     text-align: center;
     font-size: 40px;
     background-color: rgb(95, 91, 91);
@@ -78,7 +78,6 @@ p {
     border: 3px solid blue;
     opacity: .9;
 }
-
 
 #questions {
     text-align: center;
@@ -170,4 +169,103 @@ h1:hover {
 #false:hover {
     opacity: 1;
     background-color: yellowgreen;
+}
+
+img {
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+.image {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 44.5%;
+    width: 200px;
+    height: 200px;
+}
+
+.image-cover {
+    object-fit: cover;
+    object-position: right top;
+}
+
+@media screen and (max-width: 980px) {
+
+#main-section{
+    width: 80%;
+    top: 220px;
+    }
+
+.image {
+    left: 38%;
+}    
+
+#start-button {
+    left: 38%;
+}
+
+#restart {
+    left: 38%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+#main-section{
+        width: 80%;
+        top: 220px;
+        }
+    
+.image {
+        left: 38%;
+    }    
+    
+#start-button {
+        left: 38%;
+    }
+    
+#restart {
+        left: 38%;
+    }
+#true {
+        margin-left: 130px;
+}
+
+img {
+       height: 175px;
+       width: 175px;    
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#questions {
+    font-size: 30px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+ 
+h1 {
+    font-size: 50px;
+}
+
+#questions {
+    font-size: 26px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.image {
+    left: 35%;
+}    
+
 }

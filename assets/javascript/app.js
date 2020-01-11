@@ -5,51 +5,47 @@ $(document).ready(function () {
         {
             question: "The main storyline follows a character named Evie.",
             answer: "false",
-            image: "../images/evie-1.jpg"
+            image: "assets/images/evie-1.jpg"
         },
         {
             question: "The character Mal, can take the form of a dragon.",
             answer: "true",
-            image: "../images/mal-2.jpg"
+            image: "assets/images/mal-2.jpg"
         },
         {
             question: "The character named Carlos is afraid of dogs.",
             answer: "true",
-            image: "../images/carlos-3.jpg"
+            image: "assets/images/carlos-3.jpg"
         },
         {
             question: "In the first Descendants movie, the four characters picked to go to Auradon Prep are Carlos, Jay, Evie, and Dizzy.",
             answer: "false",
-            image: "../images/group-4.jpg"
+            image: "assets/images/group-4.jpg"
         },
         {
             question: "Ben is the future king of The Isle of The Lost.",
             answer: "false",
-            image: "../images/ben-5.jpg"
+            image: "assets/images/ben-5.jpg"
         },
         {
             question: "Mal's dad is a god named Hades.",
             answer: "true",
-            image: "../images/hades-6.jpg"
+            image: "assets/images/hades-6.jpg"
         },
         {
             question: "In Descendants 2, Evie cast a spell to make her hair blonde.",
             answer: "false",
-            image: "../images/mal-7.jpg"
+            image: "assets/images/mal-7.jpg"
         },
         {
             question: "In Descendents 3, Mal turns into the Queen of Mean.",
             answer: "false",
-            image: "../images/audrey-8.jpg"
+            image: "assets/images/audrey-8.jpg"
         },
         {
             question: "In Descendants 2 Mal's nickname for Uma is shrimpy.",
             answer: "true",
-            image: "../images/uma-9.jpg"
-        },
-        {
-            question:"",
-            answer:""
+            image: "assets/images/uma-9.jpg"
         }
     ];
 
@@ -94,12 +90,13 @@ $(document).ready(function () {
         }
     })
 
-    // function to start the game
+    // function to start the game set time interval to 1 sec
     function run() {
+        $(".image").show();
         $("#time-left").show();
         $("#questions").show();
         $("#questions").html(questions[i].question);
-        $("#img").html(questions[i].image);
+        $(".image").html("<img src='" + questions[i].image + "'>");
         $("#start-button").hide();
         $(".choice").show();
         intervalId = setInterval(decrement, 1000);
@@ -115,6 +112,7 @@ $(document).ready(function () {
             $("#notAnswered").html("Unanswered: " + unAnswered);
         }
         $("#questions").html(questions[i].question);
+        $(".image").html("<img src='" + questions[i].image + "'>");
     }
 
     // function to count down time and get new question if timer reaches 0
@@ -128,7 +126,6 @@ $(document).ready(function () {
             i++;
             getNewQ();
         }
-        console.log(i);
     }
 
     // function to clear timer and display results and show restart button
@@ -138,6 +135,7 @@ $(document).ready(function () {
         $("#right").show();
         $("#wrong").show();
         $("#notAnswered").show();
+        $(".image").hide();
         $("#time-left").hide();
         $("#questions").hide();
         $(".choice").hide();
@@ -147,8 +145,10 @@ $(document).ready(function () {
     // function to reset and restart game
     function restart() {
         intervalId = setInterval(decrement, 1000);
+        $(".image").html("<img src='" + questions[i].image + "'>");
         $("#questions").html(questions[i].question);
         $("#time-left").show();
+        $(".image").show();
         $("#questions").show();
         $(".choice").show();
         $("#right").hide();
